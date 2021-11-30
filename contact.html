@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Kim-Linh Portfolio</title>
+        <link rel="stylesheet" href="contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+
+        <!-- Header + Nav Bar -->
+        <section class="header">
+            <h1 class="portfolio">My Portfolio</h1>
+            <hr>
+            <nav>
+                
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html#about-me">ABOUT</a></li>
+                        <li><a href="index.html#projects">PROJECTS</a></li>
+                        <li><a href="">RESUME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--<hr>-->
+        </section>
+
+        <!-- Contact Me -->
+        <div class="contact-body">
+        
+            <form class="form" id="contactForm">
+                <div class="head">
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="alert">
+                    Your message has been submitted
+                </div>
+                <div class=form-content>
+                    
+                    <input type="text" name="name" placeholder="Name" id="name" required>
+                </div>
+                
+                <div class=form-content>
+                    
+                    <input type="text" name="company" placeholder="Company" id="company">
+                </div>
+                
+                <div class=form-content>
+                    
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+                
+                <div class=form-content required>
+                    <textarea name="message" rows="5" placeholder="Message" id="message"></textarea>
+                </div>
+                
+                <button class="submit" id="submit">SUBMIT</button>
+                <!--Button-->
+            </form>
+            <div class="form-right">
+               
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>

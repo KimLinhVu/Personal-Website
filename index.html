@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Kim-Linh Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!-- Header + Nav Bar -->
+        <section class="header">
+            <h1 class="portfolio">My Portfolio</h1>
+            <hr>
+            <nav>
+                
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#about-me">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="">RESUME</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--<hr>-->
+        </section>
+        
+        <!-- Plant Area -->
+        <section class="hero" id="hero">
+            <div class="greet">
+                <h3 class="greet-start">Hi, I am a </h3>
+                <h3 class="typing"></h3>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about-me">
+            <div class="background">
+                <img src="img/bg1.jpg" id="background">
+            </div>
+            <div class="about-row">
+                <div class="about-col slide left">
+                    <h2 class="intro">
+                        Hi! My name is Kim-Linh, and I am a CS Major at Cal Poly SLO!
+                    </h2>
+                    <p class="intro-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nostrum magnam impedit quis sint, a fugiat consequuntur quam, veniam quisquam nemo distinctio. Quaerat mollitia nemo sint quibusdam quis architecto sed. a fugiat consequuntur quam, veniam quisquam nemo distinctio. Quaerat mollitia nemo sint quibusdam quis architecto sed</p>
+                    <hr>
+                    <ul class="social-media">
+                        <li><a href=""><i class="fa fa-github"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="about-col slide right">
+                    <img class="pfp" src="img/pfp (2).jpg" alt="Picture of Me!">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects -->
+        <section class="projects" id="projects">
+
+            <h1 class="proj-title"></h1>
+            <div class="project-row reveal">
+                <div class="project-col" data-modal-target="#modal-container1">
+                    <img src="img/plant7.jpg" class="project-img">
+                    <h4>PROJECT 1</h4>
+                    <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
+                </div>
+                <div class="project-col" data-modal-target="#modal-container1">
+                    <img src="img/plant12.jpg" class="project-img">
+                    <h4>PROJECT 2</h4>
+                    <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
+                </div>
+                <div class="project-col" data-modal-target="#modal-container1">
+                    <img src="img/plant.jpg" class="project-img">
+                    <h4>PROJECT 3</h4>
+                    <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Modals-->
+        <div class="modal-container" id="modal-container1">
+            <i class="fa fa-times" data-close-button = "#modal-container1" id="close"></i>
+            <h2>Modal Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque magni, praesentium molestiae voluptatem nihil libero ex quos eius quasi aperiam architecto iste culpa consequuntur? Saepe tempore laboriosam porro nulla.</p>
+        </div>
+        
+        <div class="modal-container" id="modal-container2">
+            <div class="modal" id="modal">
+                <i class="fa fa-times" id="close"></i>
+                <h2>Modal Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque magni, praesentium molestiae voluptatem nihil libero ex quos eius quasi aperiam architecto iste culpa consequuntur? Saepe tempore laboriosam porro nulla.</p>
+            </div>
+        </div>
+        <div class="modal-container" id="modal-container3">
+            <div class="modal" id="modal">
+                <i class="fa fa-times" id="close"></i>
+                <h2>Modal Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque magni, praesentium molestiae voluptatem nihil libero ex quos eius quasi aperiam architecto iste culpa consequuntur? Saepe tempore laboriosam porro nulla.</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
+     <footer>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">HOME |</a></li>
+                <li><a href="#about-me">ABOUT |</a></li>
+                <li><a href="#projects">PROJECTS |</a></li>
+                <li><a href="">RESUME |</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+     </footer>
+     <script src="app.js"></script>
+    </body>
+</html>
