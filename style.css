@@ -13,7 +13,6 @@
     display: inline-block;
     top: 0;
     width: 100%;
-    background-color: white;
 }
 
 h1{
@@ -73,23 +72,30 @@ nav{
 /*Hero Section*/
 
 .hero {
-    height: 610px;
+    height: 587px;
     width: 100%;
     background: url("img/plant7.jpg");
     background-size: cover;
     transition: 1.5s;
     display: flex;
-    margin: 0px;
 }
 
 .greet{
-    
-    top: 50%;
-    left: 50%;
+    margin-top: 18%;
     display: flex;
     color: white;
+    margin-left: 10%;
 }
 
+.greet-start, .typing{
+    font-size: 70px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+.typing{
+    margin-left: 25px;
+}
 
 .typing:after{
     content: "";

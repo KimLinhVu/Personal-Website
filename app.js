@@ -79,7 +79,56 @@ function reveal(){
     }
 }
 
-/* Typewriter Effect */
+/* Typewriter Effect Header*/
+const textDisplay = document.getElementById('typing')
+const phrases = ['college student', 'CS major', 'developer', 'gamer', 'designer']
+let i = 0
+let j = 0
+let currentPhrase = []
+let isDeleting = false
+let isEnd = false
+
+function loop(){
+    isEnd = false
+    textDisplay.innerHTML = currentPhrase.join('')
+
+    if (i < phrases.length){
+
+        if (!isDeleting && j <= phrases[i].length){
+            currentPhrase.push(phrases[i][j])
+            j++
+            textDisplay.innerHTML = currentPhrase.join('')
+        }
+
+        if (isDeleting){
+            currentPhrase.pop(phrases[i][j])
+            j--
+            textDisplay.innerHTML = currentPhrase.join('')
+        }
+
+        if (j == phrases[i].length){
+            isDeleting = true
+            isEnd = true
+        }
+
+        if (isDeleting && j === 0){
+            i++
+            currentPhrase = []
+            isDeleting = false
+
+            if (i == phrases.length){
+                i = 0
+            }
+        }
+    }
+    const spedUp = Math.random() * (80 - 50) + 50
+    const normalSpeed = Math.random() * (200 - 100) + 100
+    const time = isEnd ? 1500 : isDeleting ? spedUp : normalSpeed
+    setTimeout(loop, time)
+}
+loop()
+
+/* Typewriter Effect project*/
 const texts = ['projects']
 let count = 0;
 let index = 0;
@@ -101,31 +150,6 @@ let letter = '';
         index = 0;
     }
     
-    setTimeout(type, 400);
-
-}());
-
-const texts1 = ['College Student', 'Developer', 'CS Major', 'Developer']
-let count1 = 0;
-let index1 = 0;
-let currentText1 = '';
-let letter1 = '';
-
-(function type(){
-
-    if (count1 === texts1.length){
-        count1 = 0;
-    }
-
-    currentText1 = texts1[count1];
-    letter1 = currentText1.slice(0, ++index1);
-    document.querySelector('.typing').textContent = letter1;
-    if(letter1.length === currentText1.length){
-
-        count1++;
-        index1 = 0;
-    }
-    
-    setTimeout(type, 250);
+    setTimeout(type, 300);
 
 }());
