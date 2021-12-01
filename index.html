@@ -68,17 +68,17 @@
             <h1 class="proj-title" id="proj-title"></h1>
             <div class="project-row reveal">
                 <div class="project-col" data-modal-target="#modal-container1">
-                    <img src="img/plant7.jpg" class="project-img">
-                    <h4>PROJECT 1</h4>
-                    <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
+                    <img src="img/color.jpg" class="project-img" id="color-img">
+                    <h4>GUESS THE COLOR</h4>
+                    <p class="proj-text">A game that generates random colors and asks the user to guess the color associated with the rgb value given. The user has 5 chances, represented by hearts, to click on the right circle.</p>
                 </div>
-                <div class="project-col" data-modal-target="#modal-container1">
-                    <img src="img/plant12.jpg" class="project-img">
-                    <h4>PROJECT 2</h4>
-                    <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
+                <div class="project-col" data-modal-target="#modal-container2">
+                    <img src="img/eucalyptus.jpg" class="project-img">
+                    <h4>PORTFOLIO</h4>
+                    <p class="proj-text">You're looking at it! My first website that I made completely from scratch while self-teaching myself the basics of web-development. This website contains information about me, projects, and even a contact form!</p>
                 </div>
-                <div class="project-col" data-modal-target="#modal-container1">
-                    <img src="img/plant.jpg" class="project-img">
+                <div class="project-col" data-modal-target="#modal-container3">
+                    <img src="img/plant (2).jpg" class="project-img">
                     <h4>PROJECT 3</h4>
                     <p class="proj-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus delectus natus unde dolor asperiores non inventore quidem, ipsa reprehenderit odio sit temporibus aut voluptatum explicabo, earum eligendi praesentium? Culpa, quod?</p>
                 </div>
@@ -87,18 +87,19 @@
 
         <!--Modals-->
         <div class="modal-container" id="modal-container1">
-            <i class="fa fa-times" data-close-button = "#modal-container1" id="close"></i>
-            <h2>Modal Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque magni, praesentium molestiae voluptatem nihil libero ex quos eius quasi aperiam architecto iste culpa consequuntur? Saepe tempore laboriosam porro nulla.</p>
+            <i class="fa fa-times-circle" data-close-button = "#modal-container1" id="close"></i>
+            <div class="inside-modal">
+                <a href="https://kimlinhvu.github.io/Guess-The-Color/" target ="_blank"><img src="img/Guess the Color.png" id = "guess"></a>
+                <p class="project-description">A game made in 6 hours for my first, one-day hackathon in 2021. I worked on both the front-end and back-end using HTML, CSS, and vanilla Javascript. I started by creating the framework of the website using HTML. Then I used CSS to style the elements and add some minimal transitions and animations. Lastly, a majority of the functionality of the game was done through Javascript, such as : generating random colors, restarting/starting and ending the game, decreasing lives, and adding a timer. Through this project, I applied the skills and technology I self-taught myself over the past few weeks.</p>
+            </div>
+            <a href="https://github.com/KimLinhVu/Guess-The-Color" target="_blank" class="proj-github"><i class="fa fa-github"></i></a>
         </div>
         
         <div class="modal-container" id="modal-container2">
-            <div class="modal" id="modal">
-                <i class="fa fa-times" id="close"></i>
-                <h2>Modal Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cumque magni, praesentium molestiae voluptatem nihil libero ex quos eius quasi aperiam architecto iste culpa consequuntur? Saepe tempore laboriosam porro nulla.</p>
-            </div>
+            <i class="fa fa-times-circle" data-close-button = "#modal-container2" id="close"></i>
+            <a href="https://github.com/KimLinhVu/Personal-Website" target="_blank" class="proj-github"><i class="fa fa-github"></i></a>
         </div>
+        
         <div class="modal-container" id="modal-container3">
             <div class="modal" id="modal">
                 <i class="fa fa-times" id="close"></i>

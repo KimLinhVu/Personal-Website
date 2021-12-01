@@ -74,7 +74,7 @@ nav{
 .hero {
     height: 587px;
     width: 100%;
-    background: url("img/plant7.jpg");
+    background: url("img/plant12.jpg");
     background-size: cover;
     transition: 1.5s;
     display: flex;
@@ -109,7 +109,7 @@ p{
     width:100%;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 15px;
     letter-spacing: 2px;
 }
@@ -148,7 +148,7 @@ h2{
 /*About Me Section*/
 
 .about-me{
-    height: 96vh;
+    height: 100vh;
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -156,7 +156,7 @@ h2{
 .background{
     position: absolute;
     right: 10px;
-    height: 729px;
+    height: 100vh;
     width: 1200px;
     background-size: cover;
     display: block;
@@ -179,7 +179,6 @@ h2{
 
 .about-col{
     flex-basis: 60%;
-    z-index: 10;
 }
 
 .intro{
@@ -273,6 +272,7 @@ h3{
     border-radius: 10px;
 }
 
+
 .project-col{
     flex-basis: 25%;
     background-color: white;
@@ -294,8 +294,8 @@ h4{
 
 .proj-text{
     padding: 10px 30px;
-    font-size: 13px;
-    text-align: left;
+    font-size: 14px;
+    text-align: center;
 }
 
 .proj-title{
@@ -377,27 +377,63 @@ h4{
     pointer-events: none;
     transition: 200ms ease-in-out;
     position: fixed;
-    background-color: white;
+    background-color: rgb(228, 231, 226);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    max-width: 100%;
+    max-width: 80%;
     padding: 10px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px 0px rgba(134, 137, 150, 0.7);
+    box-shadow: 0 0 10px 0px rgba(108, 111, 121, 0.7);
     z-index: 10;
+    justify-content: center;
+}
+
+#modal-container2{
+    width: 50%;
+}
+
+#guess{
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 19%;
+}
+
+#guess:hover{
+    box-shadow: 0 0 13px 0px rgba(153, 154, 158, 0.7);
+    cursor: pointer;
+}
+
+.project-description{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+}
+
+.proj-github{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 48%;
+}
+
+.proj-github:hover{
+    color: rgb(255, 255, 255);
 }
 
 #close{
     cursor: pointer;
-    margin-left: 98%;
+    margin-left: 97%;
+    font-size: 28px;
+    color: white;
+    margin-top: 7px;
     
 }
 
 /* Footer */
 footer{
-    height: 160px;
+    height: 140px;
     background-color: rgb(41, 40, 40);
     text-align: center;
     padding: 30px 0;
