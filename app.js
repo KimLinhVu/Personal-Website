@@ -25,24 +25,29 @@ close.forEach(button => {
     })
 })
 
-// Change Img Background randomly
-
+// Change Img Background
+let photo = 0
 function changeBg(){
     
     const images = [
-        'url("img/plant.jpg")',
-        'url("img/plant7.jpg")',
+        'url("img/lavendar1.jpeg")',
         'url("img/plant12.jpg")',
+        'url("img/blueflower.jpeg")',
+        'url("img/plant.jpg")',
+        'url("img/lily.jpeg")'
     ]
-    
-    const i = 0
+
+    if (photo === images.length){
+        photo = 0
+    }
     const background = document.querySelector('.hero')
-    const bg = images[Math.floor(Math.random() * images.length)]
+    const bg = images[photo]
+    photo += 1
     background.style.background = bg;
     background.style.backgroundSize = "cover"
     
 }
-setInterval(changeBg, 3500)
+setInterval(changeBg, 4000)
 
 //Show reveal elements while scrolling
 
@@ -81,7 +86,7 @@ function reveal(){
 
 /* Typewriter Effect Header*/
 const textDisplay = document.getElementById('typing')
-const phrases = ['college student', 'CS major', 'developer', 'gamer', 'designer']
+const phrases = ['college student', 'CS major', 'developer', 'programmer', 'gamer']
 let i = 0
 let j = 0
 let currentPhrase = []
